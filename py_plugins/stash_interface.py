@@ -62,6 +62,7 @@ class StashInterface:
                                 scanGenerateSprites: false
                                 scanGeneratePreviews: false
                                 scanGenerateImagePreviews: false
+                                stripFileExtension: false
                             }
                         ) 
                     }
@@ -134,7 +135,7 @@ class StashInterface:
                     url
                     date
                     rating
-                    gallery {
+                    galleries {
                         id
                     }
                     studio {
@@ -240,7 +241,7 @@ class StashInterface:
                         id
                         url
                         rating
-                        gallery {id}
+                        galleries {id}
                         studio {id}
                         tags {id}
                         performers {id}
@@ -288,7 +289,7 @@ class StashInterface:
                 count
                 galleries {
                     id
-                    scene {
+                    scenes {
                         id
                     }
                 }
